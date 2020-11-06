@@ -1,14 +1,23 @@
-def runtime():
-    greeting = "Hey, Hey, Hey!"
-    name = "Repl"
-    doa = "October 30"
+def knowme():
+    greeting = "Getting to know me!!"
+    name = "Biography"
+    doa = "N/A"
     job = "Runtime Link"
-    embed = "https://python-hello-series.jmort1021.repl.run"
+    embed = "https://docs.google.com/document/d/1eraYQJxeKZMs2jIfLqTlP15P6V-SPBlfNjDUKnpwh3k/edit?usp=sharing"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
+    return info
+
+def runtime():
+    greeting = "No feelings!"
+    name = "Coder Joes Repl"
+    doa = "November 6"
+    job = "Runtime Link"
+    embed = "https://repl.it/@BraydenBasinger/Flask-Web-Series-Coder-Joes#main.py"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
 def planning():
-    greeting = "Hey, Hey!"
+    greeting = "Only Artifacts!"
     name = "Padlet"
     doa = "October 23"
     job = "Project Planning"
@@ -17,56 +26,54 @@ def planning():
     return info
 
 def journal():
-    greeting = "Hey!"
+    greeting = "No feelings!"
     name = "Google Doc"
-    doa = "October 16"
+    doa = "Never! Keep Working!"
     job = "Journal Record"
-    embed = "https://docs.google.com/document/d/1Om-4ns6kmzePFvCB2WAyXArEHLUvKVWcQ7jVwswtX-0/edit"
+    embed = "https://docs.google.com/document/d/1gujp2Y736AuA5281oYEUouxItbU_b3Ntq_5H199rxXk/edit?usp=sharing"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
 def playground():
-    greeting = "Play, Play, Play!"
-    name = "Replit"
-    doa = "October 9"
+    greeting = "Only Artifacts!"
+    name = "Snake Game Playground"
+    doa = "Never! Keep Working!"
     job = "Playground"
-    embed = "https://repl.it/@jmort1021/Python-Hello-Series?lite=true"
+    embed = "https://repl.it/@ryanmgds/playground#main.py"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
 def code():
-    greeting = "Code, Code, Code!"
+    greeting = "No feelings!"
     name = "Gist"
-    doa = "October 2"
+    doa = "November 6"
     job = "Code Sample"
     gist = "https://gist.github.com/jm1021/cfb277c7357e02fcb4123a6c7429a5c1.js"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "gist": gist}
     return info
 
 def alldata():
-    return [runtime(), planning(), journal(), playground(), code()]
+    return [runtime(), planning(), journal(), playground(), code(), knowme()]
 
 #Data "setup" for Projects
 #next step would be to extract project data from a database
 def setup():
     #Source Data
     name = "Nighthawk Coding"
-    github = "https://github.com/nighthawkcoders"
-    linkedin = "https://www.linkedin.com/in/john-mortensen-1021/"
-    youtube = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber"
-    twitter = "https://twitter.com/NighthawkCoding"
-    source = {"name": name, "github": github, "linkedin": linkedin, "youtube": youtube, "twitter": twitter}
+    github = "https://github.com/ryanmgds/personalweek9"
+    youtube = "https://www.youtube.com/channel/UCZnCh2FDjYaWZCFFA9mWaGg?view_as=subscriber"
+    source = {"name": name, "github": github, "youtube": youtube}
     #Project Data
-    project1 =  "Hello Series"
+    project1 =  "Guess the Number Game"
     projlinks1 = [
         Link("Project Plan", "http://nighthawkcoders.cf/courses/python/"),
-        Link("Repl", "https://repl.it/@jmort1021/Python-Hello-Series#README.md"),
+        Link("Repl", "https://repl.it/@BraydenBasinger/First-Project-Guess-The-Number#README.md"),
         Link("Resources", "https://padlet.com/jmortensen7/csp2021")
     ]
-    project2 =  "Flask Project"
+    project2 =  "Coder Joes"
     projlinks2 = [
         Link("Project Plan", "http://nighthawkcoders.cf/courses/python/"),
-        Link("Repl", "https://repl.it/@jmort1021/Python-Web-Portfolio-Series?__cf_chl_jschl_tk__=cff72504752e89d50dea999ce10f859a17ecc294-1603026111-0-AdBP5FO-3nyUc_KVdPlNwvXM4MwUXy1HXHmbiJui1YBnUTPJZ8X4UBZVeYUXrnwRBJVvku9NftGYDWtp8lp4KovKX55R8S4twedzHpa2snwLwoAWaxuc4rgAa2l9J_rWqnNvUNcjJ8-p1V1RuTWV3lIy149lptozqAQdJnGj7PlcJxnu3YH22EXK-jl7bmdQmW9r_9fE1xp8J7sOFS3I1PMgmtoExcDIQSBBTnx1zQsyQGNS6wnuX72MAPnS_x3ZL1ETNRgFbVKpLsFJiR9ED1ErU54wyZYrUxEbZ_txHd7qY1T_s_lE6Ll8jYWHx-GulQ#main.py"),
+        Link("Repl", "https://repl.it/@BraydenBasinger/Flask-Web-Series-Coder-Joes#README.MD"),
         Link("Resources", "https://padlet.com/jmortensen7/csptime1_2")
     ]
     #Project Objects
