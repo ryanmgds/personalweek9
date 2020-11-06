@@ -2,7 +2,7 @@ def knowme():
     greeting = "Getting to know me!!"
     name = "Biography"
     doa = "N/A"
-    job = "Runtime Link"
+    job = "knowme Link"
     embed = "https://docs.google.com/document/d/1eraYQJxeKZMs2jIfLqTlP15P6V-SPBlfNjDUKnpwh3k/edit?usp=sharing"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
@@ -59,7 +59,7 @@ def alldata():
 #next step would be to extract project data from a database
 def setup():
     #Source Data
-    name = "Nighthawk Coding"
+    name = "Ryan's Personal Work"
     github = "https://github.com/ryanmgds/personalweek9"
     youtube = "https://www.youtube.com/channel/UCZnCh2FDjYaWZCFFA9mWaGg?view_as=subscriber"
     source = {"name": name, "github": github, "youtube": youtube}

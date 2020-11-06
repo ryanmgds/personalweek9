@@ -30,6 +30,15 @@ def runtime_route():
     return render_template("task.html", data=data.runtime())
 
 
+def knowme_template(param, data):
+    pass
+
+
+@app.route("/project/knowme")
+def knowme_route():
+    return knowme_template("task.html", data=data.runtime())
+
+
 @app.route("/project/planning")
 def planning_route():
     return render_template("task.html", data=data.planning())
