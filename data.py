@@ -12,7 +12,7 @@ def runtime():
     name = "Coder Joes Repl"
     doa = "November 6"
     job = "Runtime Link"
-    embed = "https://repl.it/@BraydenBasinger/Flask-Web-Series-Coder-Joes#main.py"
+    embed = "https://flask-web-series-coder-joes.braydenbasinger.repl.co/"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
@@ -27,7 +27,7 @@ def planning():
 
 def journal():
     greeting = "No feelings!"
-    name = "Google Doc"
+    name = "Journal"
     doa = "Never! Keep Working!"
     job = "Journal Record"
     embed = "https://docs.google.com/document/d/1gujp2Y736AuA5281oYEUouxItbU_b3Ntq_5H199rxXk/edit?usp=sharing"
@@ -36,19 +36,19 @@ def journal():
 
 def playground():
     greeting = "Only Artifacts!"
-    name = "Snake Game Playground"
+    name = "Website Playground"
     doa = "Never! Keep Working!"
     job = "Playground"
-    embed = "https://repl.it/@ryanmgds/playground#main.py"
+    embed = "https://website-playground.ryanmgds.repl.co/"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
 def code():
     greeting = "No feelings!"
-    name = "Gist"
+    name = "Gist-"
     doa = "November 6"
     job = "Code Sample"
-    gist = "https://gist.github.com/jm1021/cfb277c7357e02fcb4123a6c7429a5c1.js"
+    gist = "https://gist.github.com/ryanmgds/4b87ec8eb06fea46b2c1fbc6400e90c0.js"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "gist": gist}
     return info
 
