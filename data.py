@@ -43,27 +43,32 @@ def playground():
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
+def code2():
+    greeting = "No feelings!"
+    name = "Gist-2"
+    doa = "November 6"
+    job = "Code Sample"
+    gist = "https://gist.github.com/ryanmgds/49e4e4283b2d6e1a6ce30a96892c22fd.js"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "gist": gist}
+    return info
+
 def code():
     greeting = "No feelings!"
     name = "Gist-"
     doa = "November 6"
     job = "Code Sample"
-    gist = "https://gist.github.com/ryanmgds/4b87ec8eb06fea46b2c1fbc6400e90c0.js"
+    gist = "https://gist.github.com/ryanmgds/6212061c1727473b2de8c243e27924c9.js"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "gist": gist}
     return info
 
 def alldata():
     return [runtime(), planning(), journal(), playground(), code(), knowme()]
 
-#Data "setup" for Projects
-#next step would be to extract project data from a database
 def setup():
-    #Source Data
     name = "Ryan's Personal Work"
     github = "https://github.com/ryanmgds/personalweek9"
     youtube = "https://www.youtube.com/channel/UCZnCh2FDjYaWZCFFA9mWaGg?view_as=subscriber"
     source = {"name": name, "github": github, "youtube": youtube}
-    #Project Data
     project1 =  "Guess the Number Game"
     projlinks1 = [
         Link("Project Plan", "http://nighthawkcoders.cf/courses/python/"),
@@ -76,16 +81,12 @@ def setup():
         Link("Repl", "https://repl.it/@BraydenBasinger/Flask-Web-Series-Coder-Joes#README.MD"),
         Link("Resources", "https://padlet.com/jmortensen7/csptime1_2")
     ]
-    #Project Objects
     proj1 = Project(project1, projlinks1)
     proj2 = Project(project2, projlinks2)
-    #HTML Data
     projects = Projects(source, [proj1, proj2])
     return projects
 
-#Link class contains button (label) and hypertext reference (href)
 class Link():
-    #link data with button and href (url)
     def __init__(self, btn, href):
         self.btn = btn
         self.href = href
@@ -94,9 +95,7 @@ class Link():
     def get_href(self):
         return self.href
 
-#Project data class contain project name and links (Link class objects)
 class Project():
-    #project data with name and links
     def __init__(self, name, links):
         self.name = name
         self.links = links
@@ -105,15 +104,11 @@ class Project():
     def get_links(self):
         return self.links
 
-#Projects class contains person (owner) and multiple projects (Project class objects)
 class Projects():
-    #HTML data with source and projects
     def __init__(self, source, projects):
         self.source = source
         self.projects = projects
-    #source data getter
     def get_source(self):
         return self.source
-    #project data getter
     def get_projects(self):
         return self.projects

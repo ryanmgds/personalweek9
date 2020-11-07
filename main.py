@@ -56,6 +56,10 @@ def playground_route():
 def code_route():
     return render_template("task.html", data=data.code())
 
+@app.route("/project/code2")
+def code2_route():
+    return render_template("task.html", data=data.code2())
+
 @app.route("/all/")
 def all_route():
     return render_template("taskall.html", datalist=data.alldata())
